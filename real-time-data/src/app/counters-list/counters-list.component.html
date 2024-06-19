@@ -1,0 +1,36 @@
+<!-- <p>counters-list works!</p> -->
+<!-- <table border="1">
+  <thead>
+    <tr>
+      <th>Fecha y hora</th>
+      <th>Contador acertado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let counter of counters">
+      <td>{{ counter.timestamp | date : "short" }}</td>
+      <td>{{ counter.contadorAcertado }}</td>
+    </tr>
+  </tbody>
+</table> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 offset-sm-3">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Fecha y hora</th>
+            <th>Número de usuarios</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let counter of counters">
+            <td>{{ counter.timestamp | date : "short" }}</td>
+            <td>{{ counter.contadorAcertado }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
